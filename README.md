@@ -4,4 +4,4 @@ Exercises from the 'Clojure from the ground up' series (https://aphyr.com/tags/C
 
 ## Usage
 
-Private
+Self-explanatory. Code snippets grouped by chapter. 
