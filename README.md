@@ -1,14 +1,7 @@
 # clojure-ground-up
 
-A Clojure library designed to ... well, that part is up to you.
+Exercises from the 'Clojure from the ground up' series (https://aphyr.com/tags/Clojure-from-the-ground-up) 
 
 ## Usage
 
-FIXME
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Private
