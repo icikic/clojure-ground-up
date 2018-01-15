@@ -6,11 +6,14 @@
 	[file] 
 	(parse-string (slurp file) true))
 
-(def data (load-json "2008.json"))
+(def ^:const fips-url "http://coastwatch.pfeg.noaa.gov/erddap/convert/fipscounty.json")
+(def ^:const ucr-2008-url  "https://raw.githubusercontent.com/maliabadi/ucr-json/master/data/parsed/normalized/2008.json")
+
+(def data (load-json ucr-2008-url))
 
 (def fips 
 	"A map of FIPS codes to their county names." 
-	(->> "fips.json" load-json :table :rows (into {}))) 
+	(->> fips-url load-json :table :rows (into {})))
 
 (defn fips-code 
 	"Given a county (a map with :fips_state_code and :fips_county_code keys), 
